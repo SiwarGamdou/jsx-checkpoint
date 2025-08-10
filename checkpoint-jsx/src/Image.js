@@ -1,9 +1,13 @@
-// src/Image.js
 import React from 'react';
-import product from './product';
 
-function Image() {
-  return <img src={product.image} alt={product.name} style={{ width: '100%' }} />;
+function Image({ image, name }) {
+  return (
+    <img
+      src={image}
+      alt={name}
+      style={{ width: '150px', display: 'block', margin: '10px auto' }}
+    />
+  );
 }
 
 export default Image;

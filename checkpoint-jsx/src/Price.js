@@ -1,9 +1,7 @@
-// src/Price.js
 import React from 'react';
-import product from './product';
 
-function Price() {
-  return <h4 style={{ color: 'green' }}>{product.price}</h4>;
+function Price({ price }) {
+  return <p style={{ fontWeight: 'bold', color:'green' }}>{price}</p>;
 }
 
 export default Price;
