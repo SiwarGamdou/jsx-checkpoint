@@ -8,7 +8,9 @@ import Description from './Description';
 import Image from './Image';
 
 // You need to import or define `product` here:
-import product from './product';  // Assuming your product data is exported from './product.js'
+import product from './product';  
+
+const firstName = "Siwar";
 
 function App() {
   return (
@@ -41,6 +43,17 @@ function App() {
           ))}
         </Row>
       </Container>
+
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        {firstName ? <h3>Hello, {firstName}!</h3> : <h3>Hello, there!</h3>}
+        {firstName && (
+          <img
+            src="emoji.png" 
+            alt="greeting"
+            style={{ marginTop: "10px", borderRadius: "10px" }}
+          />
+        )}
+      </div>
     </div>
   );
 }
