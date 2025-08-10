@@ -24,7 +24,7 @@ function App() {
           {product.map((product, index) => (
             <Col key={index} xs={12} sm={6} md={4} lg={3}>
               <Card className="h-100"  style={{borderRadius:"20px" }}>
-                 <div style={{ wrapper: 'wrap', backgroundColor: "#e7bfbfff", borderRadius:"20px", boxShadow: '0 4px 10px 2px rgba(0,0,0,0.15)', margin: '10px' }}>
+                 <div style={{ wrapper: 'wrap', backgroundColor: '#f3ecf3ff', borderRadius:"20px", boxShadow: '0 4px 10px 2px rgba(0,0,0,0.15)', margin: '10px' }}>
                   <Image  image={product.image} name={product.name} />
                  </div>
                 <Card.Body>
