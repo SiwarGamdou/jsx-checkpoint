@@ -5,7 +5,7 @@ function Image({ image, name }) {
     <img
       src={image}
       alt={name}
-      style={{ width: '150px', display: 'block', margin: '10px auto' }}
+      style={{ width: '50%', display: 'block', margin: '10px auto', objectFit: 'cover', borderRadius: '20px'   }}
     />
   );
 }
